@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <script src="https://use.fontawesome.com/056bea834d.js"></script>
+    <script type="text/javascript" src="javascript/site.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Spectral');
+    </style>
+</head>
+
+<body>
+    <header>
+        <button class="nav-toggle" id="nav-toggle"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
+        <ul class="nav nav-items mobile-nav-hidden" id="nav-items">
+            <li class="log">
+                <a href="aboutme.html"><img src="images/logo.png"></img>
+                </a>
+            </li>
+            <li class="active"><a href="index.html">Musicianship</a></li>
+            <li><a href="theatre.html">Theatre Experience</a></li>
+            <li><a href="lschool.html">Leadership </a></li>
+        </ul>
+    </header>
+
+    <main>
+        <h1>Musicianship</h1>
+        <!--<div class="slideshow" align="center">-->
+
+        <!--    <i class="fa fa-sticky-note-o" aria-hidden="true"></i>-->
+            <section class="thumbnail-gallery">
+                <div class="jazzfest">
+                   <h2>Jazz on the Bridge</h2>
+                    <img class="myslides" alt="whitney young jazz ensemble" src="images/jazz.jpg"></img>
+                    <p1>I have been a member of the Whitney M. Young Jazz Ensemble, in which I play the alto saxophone, since 2015. In that time I have played with the band at numerous events, including but not limited to Chicago Jazz Fest.</p1>
+                </div>
+
+                <div class="guitar">
+                   <h2>Learning Guitar</h2>
+                    <img class="myslides" alt="girl playing guitar" src="images/guitar.jpg"></img>
+                    <p1>I began learning guitar when I took a "wiggle and strum" class with my little sister who is pictured to my right. After getting my bearings with the help of the class instructor I continued to teach myself guitar.</p1>
+                </div>
+
+                <div class="jazzfest">
+                     <h2> Chicago Jazz Fest</h2>
+                    <iframe height="45%" width="100%" src="https://www.youtube.com/embed/7avb1wX7x_s?rel=0" frameborder="0" allowfullscreen></iframe>
+                    <p1>The summer of 2015 was the first time that the Whitney Young Jazz Ensemble played at Chicago Jazz Fest; in the Summer of 2015 the Jazz Ensemble was less than a year old. This video depicts us playing the jazz standard groovin hard.
+                        </p1>
+                </div>
+                </section>
+        <!--</div>-->
+        <!-- <h3><a href= "https://docs.google.com/document/d/17sbzsApAyxS3cjhKMDSnPyJ-gQv8-r1o9JxUgHe2s0E/edit?usp=sharing"> Theatre Experience</a></h3> -->
+        <!-- <img class="tal"  src= "images/hp.jpg">-->
+
+        <!--<h2>Leadership in School</h2> 
+             <div class="slideshow" align="center">
+                <img class="myslides" src="images/certamen1.jpg"></img>
+                <p1>I have been a member of the Whitney M.Young Certamen team since 2014. Certamen is  Latin word that means battle or struggle, but in this context Certamen is probably best described as a sort of Latin Jeopardy. At every Certamen competition your team of four people is tested on Latin grammar, Greek mythology, Roman architecture and culture, as well as Latin literature. In 2015 and 2016 my team won regionals and placed second at state. In 2017 when competing at the advance level we placed second in the region. Additionally I teach mythology to the students on the novice and lower level Certamen teams at our thrice a week practices.  <br> [Image is a group of four people standing up (advanced level certamen team) behind a group of four more people kneeling (lower level certamen team). The four people in the back are holding second place ribbons, the people in the fron third place ribbons. Eden is to the far left of the people standing.] </p1>
+                <img class="myslides" src="images/tow2.png"></img>
+                <p1>In addition to being in Jazz Band I have been on the planning committe for the Taste of Whitney Young every year. The Taste of Whitney Young is an annual event that is modeled after the Taste of Chicago. As a member of the planning committe my job is to help figure out the logistics of what we are selling and how we will pay for it. <br> [Image is of a group of teenagers standing behind a table covered in food in various condiments. There is one girl squatting in front of the table and behind the table there is a white board with Jazz Band in green bubble letters. Eden is second to the left of the people standing.] </p1>
+               
+            <h4>Leadership in the Community</h4> 
+                <img class="myslides" src= "images/garden1.jpg"></img>
+                <p1>I have been doing an urban garden with my aunt since 2014. Every summer we plant cucumber, watermelons, carrots, beets, bell peppers and tons of other things. Usually our yield for carrots and peppers is too much for us to handle so we drop off some of the produce at the Hyde Park Women's Shelter. This particular picture shows me posing next to some squash that was planted very late into the season. <br> [Image is of Eden squatting next to two large felt pots with squash sprouts. Eden is smiling.] </p1>
+                <img class="myslides" src= "images/garden2.jpg"></img>
+                <p1>This picture shows about half of my garden as of May 2017. I plan to continue to expand my garden and I hope that in the future I can grow enough to contribute more to the Women's shelter.</p1> -->
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script>
+        // var myIndex = 0;
+        // carousel();
+
+        // function carousel() {
+        //     var i;
+        //     var x = document.getElementsByClassName("myslides");
+        //     for (i = 0; i < x.length; i++) {
+        //         x[i].style.display = "none";
+        //     }
+        //     myIndex++;
+        //     if (myIndex > x.length) {
+        //         myIndex = 1
+        //     }
+        //     x[myIndex - 1].style.display = "block";
+        //     setTimeout(carousel, 7000); // Change image every 7 seconds
+        // }
+
+        var navToggle = document.getElementById('nav-toggle');
+
+        //identify nav items
+
+        var navItems = document.getElementById('nav-items');
+
+        //button waiting to be clicked
+
+        navToggle.addEventListener('click', function() {
+
+            //the button will get clicked.
+            // when the button gets clicked, the nav shows.
+
+
+            // when the button is clicked again, the nav will disappear.
+
+            navItems.classList.toggle('mobile-nav-hidden');
+
+        });
+    </script>
+
+</body>
+
+</html>

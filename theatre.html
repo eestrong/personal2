@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/056bea834d.js"></script>
+    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <script type="text/javascript" src="javascript/site.js"></script>
+</head>
+
+<body>
+    <header>
+        <button class="nav-toggle" id="nav-toggle"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
+        <ul class="nav nav-items mobile-nav-hidden" id="nav-items">
+            <li class="log">
+                <a href="aboutme.html"><img src="images/logo.png" id="grad"></img>
+                </a>
+            </li>
+            <li><a href="index.html">Musicianship</a></li>
+            <li class="active"><a href="theatre.html">Theatre Experience</a></li>
+            <li><a href="lschool.html">Leadership </a></li>
+
+        </ul>
+    </header>
+    <main>
+        <a href="https://docs.google.com/document/d/17sbzsApAyxS3cjhKMDSnPyJ-gQv8-r1o9JxUgHe2s0E/edit?usp=sharing">
+            <h3>Theatre Experience</h3>
+        </a>
+        
+        <section class="thumbnail-gallery">
+            <div class="havenp">
+                <h2>Haven Place 2016</h2>
+                <img class="myslides" alt="the cast of Haven Place 2017" src="images/hp.jpg">
+                <p1>Haven Place was a show I did in the winter of 16-17 at A Red Orchid Theatre. Haven Place was particularly unique because the show was an inclusionary one; in the HP cast was a deaf character played by a deaf actor. Due to the aforementioned
+                    all of the actors signed all of their lines in order to include both the deaf character and the deaf consumers.</p1>
+            </div>
+           
+            <div class="seuss">
+                <h2>Seussical 2016</h2>
+                <img class="myslides" alt="bird girls from seussical the musical" src="images/birdgirl.jpg">
+                <p1>I did a show in the Summer/Fall of 2016 called Seussical the Musical. In the aforementioned production I was the mezzo-soprano bird girl.</p1>
+            </div>
+        </section>
+
+        <script>
+            // var myIndex = 0;
+            // carousel();
+
+            // function carousel() {
+            //     var i;
+            //     var x = document.getElementsByClassName("myslides");
+            //     for (i = 0; i < x.length; i++) {
+            //         x[i].style.display = "none";
+            //     }
+            //     myIndex++;
+            //     if (myIndex > x.length) {
+            //         myIndex = 1
+            //     }
+            //     x[myIndex - 1].style.display = "block";
+            //     setTimeout(carousel, 7000); // Change image every 5 seconds
+            // }
+            
+             var navToggle = document.getElementById('nav-toggle');
+
+        //identify nav items
+
+        var navItems = document.getElementById('nav-items');
+
+        //button waiting to be clicked
+
+        navToggle.addEventListener('click', function() {
+
+            //the button will get clicked.
+            // when the button gets clicked, the nav shows.
+
+
+            // when the button is clicked again, the nav will disappear.
+
+            navItems.classList.toggle('mobile-nav-hidden');
+
+        });
+        </script>
+
+</html>

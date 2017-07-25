@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://use.fontawesome.com/056bea834d.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <script type="text/javascript" src="javascript/site.js"></script>
+</head>
+
+<body>
+    <header>
+        <button class="nav-toggle" id="nav-toggle"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
+        <ul class="nav nav-items mobile-nav-hidden" id="nav-items">
+            <li class="log">
+                <a href="aboutme.html"><img src="images/logo.png" id="grad"></img>
+                </a>
+            </li>
+            <li><a href="index.html">Musicianship</a></li>
+            <li><a href="theatre.html">Theatre Experience</a></li>
+            <li class="active"><a href="lschool.html">Leadership </a></li>
+
+        </ul>
+    </header>
+    <main>
+        <!--<h2>Leadership </h2>-->
+        <!--<div class="slideshow" align="center">-->
+            <section class="thumbnail-gallery">
+            <div class="certamen">
+                <h2>Certamen 2014-Present</h2>
+                <img class="myslides" alt="kids with first place certamen ribbons" src="images/certamen1.jpg"></img>
+                <p1>I have been a member of the Whitney M.Young Certamen team since 2014. Certamen is Latin word that means battle or struggle,but in this context Certamen is probably best described as a sort of Latin Jeopardy. At every Certamen competition
+                    your team of four people is tested on Latin grammar, Greek mythology, Roman architecture and culture, as well as Latin literature. In 2015 and 2016 my team won regionals and placed second at state. In 2017 when competing at the advance
+                    level we placed second in the region.</p1>
+            </div>
+
+            <div class="mgard">
+                <h2>My Garden feat. squash</h2>
+                <img alt="girl in garden next to sprouts" class="shrink" src="images/garden1.jpg"></img>
+                <p1>I have been doing an urban garden with my aunt since 2014. Every summer we plant cucumber, watermelons, carrots, beets, bell peppers and tons of other things. Usually our yield for carrots and peppers is too much for us to handle so we
+                    drop off some of the produce at the Hyde Park Women's Shelter. This particular picture shows me posing next to some squash that was planted very late into the season. </p1>
+            </div>
+            <div class="gard">
+               <h2>My Garden 2017</h2>
+                <img class="myslides" alt="urban garden" src="images/garden2.jpg"></img>
+                <p1>This picture shows about half of my garden as of May 2017. I plan to continue to expand my garden and I hope that in the future I can grow enough to contribute more to the Women's shelter.</p1>
+            </div>
+    </main>
+
+    <script>
+        // var myIndex = 0;
+        // carousel();
+
+        // function carousel() {
+        //     var i;
+        //     var x = document.getElementsByClassName("myslides");
+        //     for (i = 0; i < x.length; i++) {
+        //         x[i].style.display = "none";
+        //     }
+        //     myIndex++;
+        //     if (myIndex > x.length) {
+        //         myIndex = 1
+        //     }
+        //     x[myIndex - 1].style.display = "block";
+        //     setTimeout(carousel, 7000); // Change image every 5 seconds
+        // }
+        
+         var navToggle = document.getElementById('nav-toggle');
+
+        //identify nav items
+
+        var navItems = document.getElementById('nav-items');
+
+        //button waiting to be clicked
+
+        navToggle.addEventListener('click', function() {
+
+            //the button will get clicked.
+            // when the button gets clicked, the nav shows.
+
+
+            // when the button is clicked again, the nav will disappear.
+
+            navItems.classList.toggle('mobile-nav-hidden');
+
+        });
+    </script>
+</body>
+
+
+</html>

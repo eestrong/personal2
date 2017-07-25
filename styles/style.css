@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Bellefair');
+
+h1, h2, h3, h4 {
+    font-family: 'Bellefair', serif;
+    font-size: xx-large;
+}
+
+p1{
+    font-family: 'Bellefair', serif;
+    color:black;
+    font-size:x-large;
+    
+}
+
+ul{
+    
+    align-items:center;
+    list-style-type: none;
+    margin: 0;
+    top:0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#000000;
+    font-size: 200%;
+    width:100%;
+    text-align:center;
+    position:fixed;
+    z-index:1;
+ 
+}
+li{
+    display:inline;
+    color:#DCDCDC;
+    align-items:center;
+    height:100%;
+    margin-left:15%;
+   
+}
+
+li a:hover{
+    font-weight:bold;
+    height:100%;
+    
+}
+
+
+.nav a {
+    text-decoration: none;
+    color:#DCDCDC;
+    white-space:nowrap;
+}
+
+body{
+    margin:0%;
+}
+
+.active a{
+    color:#F4B886;
+}
+
+
+.log img{
+    display:inline;
+    margin-left:-10%;
+}
+.log img{
+    width:6%;
+    margin-bottom:-.7%;
+    margin-left:-36%;
+    
+}
+
+.nav-toggle{
+    display:none;
+}
+
+.thumbnail-gallery{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /*border: 5px solid black;*/
+  height: 100vh;
+
+  
+}
+
+div {
+  border-color: Gray;
+  border-style: solid;
+  border-width: .2em;
+  border-radius: 1.7%;
+  padding: .5em;
+  width:25%;
+  height:76%;
+  font-family:'Bellefair', serif;;
+  /*background-color: black;*/
+}
+
+.shrink{
+    height:55%;
+}
+
+img {
+   width: 100%;
+}
+
+.guitar{
+    order:2;
+}
+
+.jazzfest{
+    order:3;
+}
+@media (max-width : 650px){
+  
+.nav-toggle{
+        display:block;
+    
+    }
+li {
+        display:block;
+        padding-top:25px;
+        margin-left:-15%;
+    }
+
+.mobile-nav-hidden{
+    display:none;
+}
+ .log img{
+     width:27%;
+ }
+}
